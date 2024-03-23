@@ -47,16 +47,6 @@ dependencies {
   implementation('eu.hansolo:tilesfx:17.1.17') {
     exclude(group: 'org.openjfx')
   }
-  // https://mvnrepository.com/artifact/org.springframework/spring-core
-  implementation group: 'org.springframework', name: 'spring-core', version: '6.1.5'
-  // https://mvnrepository.com/artifact/org.postgresql/postgresql
-  implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.3'
-  // https://mvnrepository.com/artifact/org.springframework/spring-context
-  implementation group: 'org.springframework', name: 'spring-context', version: '6.1.5'
-  // https://mvnrepository.com/artifact/org.springframework/spring-beans
-  implementation group: 'org.springframework', name: 'spring-beans', version: '6.1.5'
-
-
   implementation('com.github.almasb:fxgl:11.17') {
     exclude(group: 'org.openjfx')
     exclude(group: 'org.jetbrains.kotlin')
