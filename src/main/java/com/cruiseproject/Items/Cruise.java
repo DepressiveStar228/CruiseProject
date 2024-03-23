@@ -1,145 +1,93 @@
 package com.cruiseproject.Items;
 
-public class Cruise implements Comparable<Cruise> {
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Cruise {
     private int id;
-    private static int nextId = 1;
-    private String departureLocation;
-    private String arrivalLocation;
-    private String port;
     private int price;
-    private int countPassengers;
-    private int maxCountPassengers;
+    private int freeSeats;
+    private ArrayList<City> cruiseRoute;
+    private String company;
+    private String departure;
+    private String arrival;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(String departure) {
+        this.departure = departure;
+    }
+
+    public String getArrival() {
+        return arrival;
+    }
+
+    public void setArrival(String arrival) {
+        this.arrival = arrival;
+    }
 
     public Cruise(){};
 
-    public Cruise(String depart, String arrival, String port, int price, int countPassengers, int maxCountPassengers){
-        if (depart.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (arrival.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (port.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (price <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна ціна");
-        }
-        if (countPassengers < 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна кількість пасажирів");
-        }
-        if (maxCountPassengers <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна максимальна кількість пасажирів");
-        }
-
-        this.id = nextId;
-        nextId++;
-        this.departureLocation = depart;
-        this.arrivalLocation = arrival;
-        this.port = port;
-        this.price = price;
-        this.countPassengers = countPassengers;
-        this.maxCountPassengers = maxCountPassengers;
-    }
-
-    public Cruise(int id, String depart, String arrival, String port, int price, int countPassengers, int maxCountPassengers){
-        if (id <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректний id");
-        }
-        if (depart.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (arrival.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (port.isEmpty()){
-            throw new IllegalArgumentException("Помилка. Рядок пустий");
-        }
-        if (price <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна ціна");
-        }
-        if (countPassengers < 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна кількість пасажирів");
-        }
-        if (maxCountPassengers <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректна максимальна кількість пасажирів");
-        }
-
+    public Cruise(int id, int price, int freeSeats, ArrayList<City> cruiseRoute, String company, String departure, String arrival) {
         this.id = id;
-        nextId++;
-        this.departureLocation = depart;
-        this.arrivalLocation = arrival;
-        this.port = port;
         this.price = price;
-        this.countPassengers = countPassengers;
-        this.maxCountPassengers = maxCountPassengers;
+        this.freeSeats = freeSeats;
+        this.cruiseRoute = cruiseRoute;
+        this.company = company;
+        this.departure = departure;
+        this.arrival = arrival;
     }
 
-    public boolean buyTicket(){
-        if ((this.countPassengers + 1) > this.maxCountPassengers){ return false; }
-        else {
-            this.countPassengers++;
-            return true;
+    public String getRoute() {
+        StringBuilder route = new StringBuilder();
+        for (int i = 0; i < cruiseRoute.size(); i++) {
+            route.append(cruiseRoute.get(i).getName());
+            if (i < cruiseRoute.size() - 1) {
+                route.append(" -> ");
+            }
         }
-    }
-
-    @Override
-    public int compareTo(Cruise cruise) {
-        return 0;
-    }
-
-    @Override
-    public boolean equals(Object ob){
-        if (this == ob){
-            return true;
-        }
-        if (!(ob instanceof Cruise cruise)){
-            return false;
-        }
-        return false;
+        return route.toString();
     }
 
     public int getId() {
         return id;
     }
 
-    public String getDepartureLocation() {
-        return departureLocation;
-    }
-
-    public String getArrivalLocation() {
-        return arrivalLocation;
-    }
-
-    public String getPort() {
-        return port;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getPrice() {
         return price;
     }
 
-    public int getCountPassengers() {
-        return countPassengers;
-    }
-
-    public void setDepartureLocation(String departureLocation) {
-        this.departureLocation = departureLocation;
-    }
-
-    public void setArrivalLocation(String arrivalLocation) {
-        this.arrivalLocation = arrivalLocation;
-    }
-
-    public void setPort(String port) {
-        this.port = port;
-    }
-
     public void setPrice(int price) {
         this.price = price;
     }
 
-    public void setCountPassengers(int countPassengers) {
-        this.countPassengers = countPassengers;
+    public int getFreeSeats() {
+        return freeSeats;
+    }
+
+    public void setFreeSeats(int freeSeats) {
+        this.freeSeats = freeSeats;
+    }
+
+    public ArrayList<City> getCruiseRoute() {
+        return cruiseRoute;
+    }
+
+    public void setCruiseRoute(ArrayList<City> cruiseRoute) {
+        this.cruiseRoute = cruiseRoute;
     }
 }
