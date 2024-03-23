@@ -1,3 +1,4 @@
-dep:Київ;arr:Барселона;air:Aegean;pr:5065;
-dep:Київ;arr:Барселона;air:Aegean;pr:5065;
-dep:Київ;arr:Барселона;air:Aegean;pr:5065;
+id:1;dep:Київ;arr:Барселона;port:Aegean;pr:5065;cpass:147;maxcpass:200;
+id:2;dep:Львів;arr:Барселона;port:Aegean;pr:5065;cpass:140;maxcpass:140;
+id:3;dep:Київ;arr:Суми;port:Aegean;pr:5065;cpass:0;maxcpass:180;
+id:4;dep:Київ;arr:Суми;port:Aegean;pr:5065;cpass:0;maxcpass:180;

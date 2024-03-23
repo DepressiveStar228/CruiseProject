@@ -1,21 +1,21 @@
-package com.cruiseproject;
+package com.cruiseproject.Controllers;
 
+import com.cruiseproject.ArrayList.ArrayListCruises;
+import com.cruiseproject.Items.Cruise;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-
 import java.util.ArrayList;
 
 public class HelloController {
-
     @FXML
     private ScrollPane scrollPane = new ScrollPane();
-    private static ArrayList<Cruise> cruiseArrayList = ArrayListCruises.getArrayListOfCruise();
 
     @FXML
     protected void addCruiseItem(){
+        ArrayList<Cruise> cruiseArrayList = ArrayListCruises.getArrayListOfCruises();
         Pane cruiseItem = new Pane();
         cruiseItem.setPrefWidth(scrollPane.getPrefWidth());
 
@@ -39,6 +39,26 @@ public class HelloController {
 
     @FXML
     protected void onPrintClick() {
-        addCruiseItem();
+
+    }
+
+    @FXML
+    protected void onAddTicketClick(){
+        AddTicketController.addTicket();
+    }
+
+    @FXML
+    protected void onEditClick(){
+        EditTicketController.editTicket();
+    }
+
+    @FXML
+    protected void onFindClick(){
+        FindTicketController.findTicket();
+    }
+
+    @FXML
+    protected void onDeleteTicketClick() {
+        DeleteTicketController.delTicket();
     }
 }

@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdb71211-b09b-434a-bb76-096cc1093b4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/AddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ArrayListCruises.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Cruise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ReadFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fdb71211-b09b-434a-bb76-096cc1093b4a" name="Changes" comment="Черновик v1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ArrayList/ArrayListTickets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/AddTicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/DeleteTicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/EditTicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/FindTicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Items/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cruiseproject/DB_tickets.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/AddTicketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Element.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/AddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ArrayListCruises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ArrayList/ArrayListCruises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Cruise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Items/Cruise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cruiseproject/ReadFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cruiseproject/Controllers/ReadFileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cruiseproject/DB_cruises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cruiseproject/DB_cruises.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/cruiseproject/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cruiseproject/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -79,25 +83,26 @@
       <workItem from="1710802454137" duration="8052000" />
       <workItem from="1710840106581" duration="12000" />
       <workItem from="1710864701744" duration="7489000" />
+      <workItem from="1710939043923" duration="723000" />
+      <workItem from="1711009403148" duration="4000" />
+      <workItem from="1711042695693" duration="20202000" />
     </task>
+    <task id="LOCAL-00001" summary="Черновик v1">
+      <option name="closed" value="true" />
+      <created>1710939112697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710939112697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cruiseproject/HelloController.java</url>
-          <line>17</line>
-          <properties class="com.cruiseproject.HelloController" method="addCruiseItem">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Черновик v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Черновик v1" />
   </component>
 </project>

@@ -1,0 +1,2 @@
+id:1;cru:1;npl:2;
+id:2;cru:2;npl:7;

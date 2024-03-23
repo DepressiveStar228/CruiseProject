@@ -13,4 +13,10 @@ module com.cruiseproject {
 
     opens com.cruiseproject to javafx.fxml;
     exports com.cruiseproject;
+    exports com.cruiseproject.Controllers;
+    opens com.cruiseproject.Controllers to javafx.fxml;
+    exports com.cruiseproject.ArrayList;
+    opens com.cruiseproject.ArrayList to javafx.fxml;
+    exports com.cruiseproject.Items;
+    opens com.cruiseproject.Items to javafx.fxml;
 }

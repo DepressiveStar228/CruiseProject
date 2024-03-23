@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cruiseproject.HelloController">
+<HBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cruiseproject.Controllers.HelloController">
    <children>
       <Pane prefWidth="130.0">
          <children>
@@ -18,14 +18,11 @@
                   </Label>
                </children>
             </Pane>
-            <Button fx:id="printCruises" layoutX="15.0" layoutY="50.0" mnemonicParsing="false" onAction="#onPrintClick" prefHeight="50.0" prefWidth="100.0" text="Вивести круїзи" textAlignment="CENTER">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets></Button>
-            <Button layoutX="15.0" layoutY="110.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Замовити квиток" textAlignment="CENTER" wrapText="true" />
-            <Button layoutX="15.0" layoutY="290.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Знайти квиток" textAlignment="CENTER" wrapText="true" />
-            <Button layoutX="15.0" layoutY="170.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Редагувати квиток" textAlignment="CENTER" wrapText="true" />
-            <Button layoutX="15.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Видалити квиток" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="15.0" layoutY="50.0" mnemonicParsing="false" onAction="#onPrintClick" prefHeight="50.0" prefWidth="100.0" text="Вивести круїзи" textAlignment="CENTER"/>
+            <Button layoutX="15.0" layoutY="110.0" mnemonicParsing="false" onAction="#onAddTicketClick" prefHeight="50.0" prefWidth="100.0" text="Замовити квиток" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="15.0" layoutY="290.0" mnemonicParsing="false" onAction="#onFindClick" prefHeight="50.0" prefWidth="100.0" text="Знайти квиток" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="15.0" layoutY="170.0" mnemonicParsing="false" onAction="#onEditClick" prefHeight="50.0" prefWidth="100.0" text="Редагувати квиток" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="15.0" layoutY="230.0" mnemonicParsing="false" onAction="#onDeleteTicketClick" prefHeight="50.0" prefWidth="100.0" text="Видалити квиток" textAlignment="CENTER" wrapText="true" />
          </children>
       </Pane>
       <ScrollPane fx:id="listCruises" prefWidth="470.0">
