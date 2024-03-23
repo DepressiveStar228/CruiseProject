@@ -2,54 +2,41 @@ package com.cruiseproject.Items;
 
 public class Ticket {
     private int id;
-    private static int nextId = 1;
     private Cruise cruise;
-    private int numbPlace;
+    private int seatNum;
 
     public Ticket(){}
 
-    public Ticket(Cruise cruise, int numbPlace){
-        if (numbPlace <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректне місце");
-        }
-
-        this.id = nextId;
-        nextId++;
+    public Ticket(int id, Cruise cruise, int seatNum) {
+        this.id = id;
         this.cruise = cruise;
-        this.numbPlace = numbPlace;
+        this.seatNum = seatNum;
     }
 
-    public Ticket(int id, Cruise cruise, int numbPlace){
-        if (id <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректний id");
-        }
-        if (numbPlace <= 0) {
-            throw new IllegalArgumentException("Помилка. Некоректне місце");
-        }
-
-        this.id = id;
-        nextId++;
-        this.cruise = cruise;
-        this.numbPlace = numbPlace;
+    public Ticket(int ticketId, Object cruise) {
     }
 
     public int getId() {
         return id;
     }
 
-    public Cruise getCruise() {
-        return cruise;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getNumbPlace() {
-        return numbPlace;
+    public Cruise getCruise() {
+        return cruise;
     }
 
     public void setCruise(Cruise cruise) {
         this.cruise = cruise;
     }
 
-    public void setNumbPlace(int numbPlace) {
-        this.numbPlace = numbPlace;
+    public int getSeatNum() {
+        return seatNum;
+    }
+
+    public void setSeatNum(int seatNum) {
+        this.seatNum = seatNum;
     }
 }

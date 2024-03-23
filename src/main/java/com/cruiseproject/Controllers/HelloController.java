@@ -1,6 +1,6 @@
 package com.cruiseproject.Controllers;
 
-import com.cruiseproject.ArrayList.ArrayListCruises;
+
 import com.cruiseproject.Items.Cruise;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -15,7 +15,7 @@ public class HelloController {
 
     @FXML
     protected void addCruiseItem(){
-        ArrayList<Cruise> cruiseArrayList = ArrayListCruises.getArrayListOfCruises();
+        ArrayList<Cruise> cruiseArrayList = null;
         Pane cruiseItem = new Pane();
         cruiseItem.setPrefWidth(scrollPane.getPrefWidth());
 
@@ -44,21 +44,16 @@ public class HelloController {
 
     @FXML
     protected void onAddTicketClick(){
-        AddTicketController.addTicket();
-    }
-
-    @FXML
-    protected void onEditClick(){
-        EditTicketController.editTicket();
+//        AddTicketController.addTicket();
     }
 
     @FXML
     protected void onFindClick(){
-        FindTicketController.findTicket();
+//        FindTicketController.findTicket();
     }
 
     @FXML
     protected void onDeleteTicketClick() {
-        DeleteTicketController.delTicket();
+//        DeleteTicketController.delTicket();
     }
 }
